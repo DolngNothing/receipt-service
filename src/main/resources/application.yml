@@ -1,4 +1,12 @@
-server.port=8091
+server:
+  port: 8091
+spring:
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 10.222.29.209
+    port: 5672
+    username: root
+    password: 83aeb88a
 #
 #
 #spring.application.name=receipt-service

@@ -15,14 +15,17 @@ configurations {
 }
 
 repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
     jcenter()
-    mavenCentral()
 }
 
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    implementation 'com.tencentcloudapi:tencentcloud-sdk-java:3.1.111'
+    implementation 'com.github.qcloudsms:qcloudsms:1.0.6'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.h2database:h2'
