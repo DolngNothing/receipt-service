@@ -25,7 +25,6 @@ public class TencentSmsUtils {
                     TEMPLATE_ID, templateParams, SMS_SIGN, EXTEND, EXT);
             System.out.println(smsSingleSenderResult);
         } catch (HTTPException | JSONException | IOException ignored) {
-
         }
     }
 }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
-@RabbitListener(queues = "NotificationSendSMS")
+@RabbitListener(queues = DirectRabbitConfig.QUEUE_NAME)
 public class DirectReceiver {
     @RabbitHandler
     public void process(Map<String,String> message) {
